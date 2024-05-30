@@ -163,8 +163,8 @@ def main(username):
     payroll_button = gui.button_design(main_frame, 600, 88, 495, 104, "#065494", "white", " PAYROLL",("Century Gothic", 30, 'bold'))
     payroll_button.config(image=payroll_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494",  command=switch_to_payroll_page)
     account_image = ImageTk.PhotoImage(Image.open("Account_Logo.png").resize((56, 61)))
-    account_button = gui.button_design(main_frame, 1174, 88, 495, 104, "#065494", "white", " ACCOUNT",("Century Gothic", 30, 'bold'))
-    account_button.config(image=account_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#065494", command=switch_to_account_page)
+    account_button = gui.button_design(main_frame, 1174, 88, 495, 104, "#red", "white", " ACCOUNT",("Century Gothic", 30, 'bold'))
+    account_button.config(image=account_image, compound=tk.LEFT, relief=tk.FLAT, activebackground="#red", command=switch_to_account_page)
 
     window.state('zoomed')  # Functionality to keep the page on auto-full screen
     window.mainloop()  # Start the GUI event loop
